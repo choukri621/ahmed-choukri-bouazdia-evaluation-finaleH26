@@ -5,7 +5,7 @@ function Livres() {
   const [livres, setLivres] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/livres").then((res) => {
+    axios.get("https://bibliotheque-api-exo5.onrender.com/api/livres").then((res) => {
       setLivres(res.data);
     });
   }, []);
