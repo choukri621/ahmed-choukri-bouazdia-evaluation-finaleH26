@@ -1,16 +1,76 @@
-# React + Vite
+# Bibliothèque numérique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projet réalisé dans le cadre du cours Programmation Web avancée (420-VT3-AG).
 
-Currently, two official plugins are available:
+## Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Backend
+- Node.js
+- Express
+- MySQL
+- Swagger
 
-## React Compiler
+### Frontend
+- React
+- Axios
+- React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+### Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd server
+npm install
+npm start
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+## Variables d'environnement
+
+Créer un fichier `.env` :
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=bibliotheque
+PORT=5000
+```
+
+## API
+
+### Livres
+
+- GET /api/livres
+
+### Emprunts
+
+- GET /api/livres/emprunts?email=test@test.com
+
+## Documentation Swagger
+
+Disponible à :
+
+https://bibliotheque-api-exo5.onrender.com/api-docs
+
+## Déploiement
+
+### Frontend
+
+https://ahmed-choukri-bouazdia-evaluation-f.vercel.app
+
+### Backend
+
+https://bibliotheque-api-exo5.onrender.com
+
+## Auteur
+
+Ahmed Choukri Bouazdia
